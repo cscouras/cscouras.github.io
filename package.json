@@ -1,12 +1,15 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Chris",
+  "description": "Chris Scouras's FreeCodeCamp Portfolio Site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chris Scouras <chris.scouras@gmail.com>",
   "dependencies": {
     "gatsby": "^1.0.1",
     "gatsby-link": "^1.0.1",
-    "gatsby-plugin-react-helmet": "^1.0.1"
+    "gatsby-plugin-react-helmet": "^1.0.1",
+    "gatsby-plugin-styled-components": "^1.0.1",
+    "gh-pages": "^1.0.0",
+    "prop-types": "^15.5.10"
   },
   "keywords": [
     "gatsby"
@@ -14,15 +17,19 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "clean": "rm -rf public/*.html",
+    "build": "rm -rf public/*html && gatsby build",
     "deploy": "gatsby build && gh-pages -d public",
+    "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
     "prettier": "^1.5.2"
   }
 }
