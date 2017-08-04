@@ -1,4 +1,10 @@
 module.exports = {
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "graphql": false
+  },
   "plugins": [
     "react"
   ],

@@ -1,19 +1,74 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import logo from '../data/images/CS-logo.svg'
-import {
-  SiteHeader,
-  HeaderContent,
-  Logo,
-  SiteNav,
-  Footer,
-  FooterContent,
-  FooterNav
-} from './shared'
-
+import {HeaderContainer, HeaderContent, Logo, SiteNav} from '../components/Header'
 import './flexstyles.css'
+
+import GithubIcon from 'react-icons/lib/fa/github-square'
+import LinkedInIcon from 'react-icons/lib/fa/linkedin-square'
+
+// Social Media Icons
+const GitHubLogo = styled(GithubIcon)`
+  font-size: 50px;
+  &:hover {
+    color: #0092CA;
+  }
+`
+
+const LinkedInLogo = styled(LinkedInIcon)`
+  font-size: 50px;
+  &:hover {
+    color: #0092CA;
+  }
+`
+
+
+const Footer = styled.footer`
+  background: #222831;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  @media (max-width: 600px){
+    justify-content: center;
+  }
+`
+
+const FooterContent = styled.div`
+  margin-right: 15%;
+
+  @media (max-width: 600px){
+    margin-right: 0px;
+  }
+`
+
+const FooterNav = styled.nav`
+  > ul {
+    padding:0;
+    list-style: none;
+    display: flex;
+  }
+`
+
+const SiteContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
+
+const ContentWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  flex:1;
+`
 
 const TemplateWrapper = ({children}) => (
   <div>
@@ -26,8 +81,8 @@ const TemplateWrapper = ({children}) => (
         content: 'portfolio, web development, front end'
       }
     ]}/>
-    <main className="site">
-      <SiteHeader>
+  <SiteContainer>
+      <HeaderContainer>
         <HeaderContent>
           <Link to="/">
             <Logo src={logo} alt="logo"></Logo>
@@ -46,32 +101,26 @@ const TemplateWrapper = ({children}) => (
             </ul>
           </SiteNav>
         </HeaderContent>
-      </SiteHeader>
+      </HeaderContainer>
 
-      <div className="wrapper-content" style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0
-      }}>
-
+      <ContentWrapper>
         {children()}
-      </div>
+      </ContentWrapper>
       <Footer>
         <FooterContent>
           <FooterNav>
             <ul>
               <a href="https://github.com/cscouras" target="_blank" rel="noopener noreferrer">
-                <li>GitHub</li>
+                <li><GitHubLogo /></li>
               </a>
               <a href="https://www.linkedin.com/in/cscouras/" target="_blank" rel="noopener noreferrer">
-                <li>LinkedIn</li>
+                <li><LinkedInLogo /></li>
               </a>
             </ul>
           </FooterNav>
         </FooterContent>
       </Footer>
-    </main>
+    </SiteContainer>
   </div>
 )
 

@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-const SiteHeader = styled.header`
-  display: flex;
-  color: #eee;
+const HeaderContainer = styled.header`
   border-bottom: 5px solid #222831;
   padding: 1em;
   margin-bottom: 1em;
@@ -13,7 +11,14 @@ const HeaderContent = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
+
+  @media (max-width: 600px){
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 `
 
 const Logo = styled.img`
@@ -37,45 +42,16 @@ const SiteNav = styled.nav`
       margin: 0px;
       > a {
         padding: 3px;
+        transition: background .5s;
         &:hover {
           background: #0092CA;
         }
       }
     }
   }
-`
-
-const Footer = styled.footer`
-  background: #222831;
-  height: 120px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-`
-
-const FooterContent = styled.div`
-  width: 960px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-`
-
-const FooterNav = styled.nav`
-  > ul {
-    list-style: none;
-    margin-right: 10%;
-    padding: 0;
-  }
-  > li {
-    margin-top: 5px;
+  @media (max-width: 600px){
+    margin-top: 15px;
   }
 `
 
-export {
-  SiteHeader,
-  HeaderContent,
-  Logo,
-  SiteNav,
-  Footer,
-  FooterContent,
-  FooterNav}
+export {HeaderContainer, HeaderContent, Logo, SiteNav}
