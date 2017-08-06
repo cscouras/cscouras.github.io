@@ -30,18 +30,3 @@ h3,
 p {
   margin: 0;
 }
-
-a {
-  text-decoration: none;
-  color: #eee;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-}

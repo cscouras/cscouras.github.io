@@ -1,74 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import logo from '../data/images/CS-logo.svg'
-import {HeaderContainer, HeaderContent, Logo, SiteNav} from '../components/Header'
+import { HeaderContainer, HeaderContent, Logo, Nav } from '../components/Header'
+import { FooterContainer, FooterContent, FooterSocial } from '../components/Footer'
+import { SiteContainer, ContentWrapper } from './shared'
+import { GitHubLogo, LinkedInLogo } from '../components/Icons'
 import './flexstyles.css'
 
-import GithubIcon from 'react-icons/lib/fa/github-square'
-import LinkedInIcon from 'react-icons/lib/fa/linkedin-square'
-
-// Social Media Icons
-const GitHubLogo = styled(GithubIcon)`
-  font-size: 50px;
-  &:hover {
-    color: #0092CA;
-  }
-`
-
-const LinkedInLogo = styled(LinkedInIcon)`
-  font-size: 50px;
-  &:hover {
-    color: #0092CA;
-  }
-`
-
-
-const Footer = styled.footer`
-  background: #222831;
-  height: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-
-  @media (max-width: 600px){
-    justify-content: center;
-  }
-`
-
-const FooterContent = styled.div`
-  margin-right: 15%;
-
-  @media (max-width: 600px){
-    margin-right: 0px;
-  }
-`
-
-const FooterNav = styled.nav`
-  > ul {
-    padding:0;
-    list-style: none;
-    display: flex;
-  }
-`
-
-const SiteContainer = styled.main`
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-`
-
-const ContentWrapper = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
-  flex:1;
-`
 
 const TemplateWrapper = ({children}) => (
   <div>
@@ -87,7 +27,7 @@ const TemplateWrapper = ({children}) => (
           <Link to="/">
             <Logo src={logo} alt="logo"></Logo>
           </Link>
-          <SiteNav>
+          <Nav>
             <ul>
               <li>
                 <Link to="/projects">Projects</Link>
@@ -99,16 +39,17 @@ const TemplateWrapper = ({children}) => (
                 <Link to="/contact">Contact</Link>
               </li>
             </ul>
-          </SiteNav>
+          </Nav>
         </HeaderContent>
       </HeaderContainer>
 
       <ContentWrapper>
         {children()}
       </ContentWrapper>
-      <Footer>
+
+      <FooterContainer>
         <FooterContent>
-          <FooterNav>
+          <FooterSocial>
             <ul>
               <a href="https://github.com/cscouras" target="_blank" rel="noopener noreferrer">
                 <li><GitHubLogo /></li>
@@ -117,9 +58,9 @@ const TemplateWrapper = ({children}) => (
                 <li><LinkedInLogo /></li>
               </a>
             </ul>
-          </FooterNav>
+          </FooterSocial>
         </FooterContent>
-      </Footer>
+      </FooterContainer>
     </SiteContainer>
   </div>
 )

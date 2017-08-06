@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 const ContentContainer = styled.div`
   max-width: 500px;
-  margin-top: 10px;
-  h3 {
-    margin: 10px 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex: 1;
   a {
     color: #0092CA;
   }
@@ -13,5 +13,11 @@ const ContentContainer = styled.div`
     margin: 10px 0;
     line-height: 1.5;
   }
+  @media (max-width: 600px){
+    margin: 0 1.5em;
+    h1 {
+      font-size: 1.5em;
+    }
+  }
 `
-export default ContentContainer
+export  default ContentContainer

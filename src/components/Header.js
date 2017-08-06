@@ -27,7 +27,7 @@ const Logo = styled.img`
   margin; 5px
 `
 
-const SiteNav = styled.nav`
+const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
   > ul {
@@ -41,6 +41,7 @@ const SiteNav = styled.nav`
     > li {
       margin: 0px;
       > a {
+        color: #eee;
         padding: 3px;
         transition: background .5s;
         &:hover {
@@ -54,4 +55,4 @@ const SiteNav = styled.nav`
   }
 `
 
-export {HeaderContainer, HeaderContent, Logo, SiteNav}
+export { HeaderContainer, HeaderContent, Logo, Nav }
