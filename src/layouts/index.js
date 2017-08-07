@@ -9,23 +9,26 @@ import { SiteContainer, ContentWrapper } from './shared'
 import { GitHubLogo, LinkedInLogo } from '../components/Icons'
 import './flexstyles.css'
 
-
-const TemplateWrapper = ({children}) => (
-  <div>
-    <Helmet title="Chris Scouras - Front End Web Developer" meta={[
-      {
-        name: 'description',
-        content: 'Chris Scouras\'s Front End Web Portfolio'
-      }, {
-        name: 'keywords',
-        content: 'portfolio, web development, front end'
-      }
-    ]}/>
-  <SiteContainer>
+const TemplateWrapper = ({ children }) =>
+  (<div>
+    <Helmet
+      title="Chris Scouras - Front End Web Developer"
+      meta={[
+        {
+          name: 'description',
+          content: "Chris Scouras's Front End Web Portfolio",
+        },
+        {
+          name: 'keywords',
+          content: 'portfolio, web development, front end',
+        },
+      ]}
+    />
+    <SiteContainer>
       <HeaderContainer>
         <HeaderContent>
           <Link to="/">
-            <Logo src={logo} alt="logo"></Logo>
+            <Logo src={logo} alt="logo" />
           </Link>
           <Nav>
             <ul>
@@ -52,21 +55,28 @@ const TemplateWrapper = ({children}) => (
           <FooterSocial>
             <ul>
               <a href="https://github.com/cscouras" target="_blank" rel="noopener noreferrer">
-                <li><GitHubLogo /></li>
+                <li>
+                  <GitHubLogo />
+                </li>
               </a>
-              <a href="https://www.linkedin.com/in/cscouras/" target="_blank" rel="noopener noreferrer">
-                <li><LinkedInLogo /></li>
+              <a
+                href="https://www.linkedin.com/in/cscouras/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>
+                  <LinkedInLogo />
+                </li>
               </a>
             </ul>
           </FooterSocial>
         </FooterContent>
       </FooterContainer>
     </SiteContainer>
-  </div>
-)
+  </div>)
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func.isRequired,
 }
 
 export default TemplateWrapper

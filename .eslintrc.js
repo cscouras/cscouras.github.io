@@ -1,24 +1,14 @@
 module.exports = {
-  "env": {
-    "browser": true
-  },
-  "globals": {
-    "graphql": false
-  },
+  "extends": "airbnb",
   "plugins": [
-    "react"
+    "react",
+    "jsx-a11y",
+    "import"
   ],
-    "extends": [
-      "eslint:recommended", "plugin:react/recommended"
-    ],
-    "parser": "babel-eslint",
-    "parserOptions": {
-      "ecmaFeatures" : {
-        "jsx": true
-      }
-    },
-    "rules": {
-      "jsx-quotes" : ["warn", "prefer-double"],
-      "semi":["error", "never"]
-    }
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "no-use-before-define": 0,
+    "semi": 0,
+    "import/no-extraneous-dependencies": 0
+  }
 };

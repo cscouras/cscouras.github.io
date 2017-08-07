@@ -67,4 +67,4 @@ const ProjectContainer = styled.div`
   }
 `
 
-export { ProjectContainer, ProjectContentWrapper, CardWrapper, LangList}
+export { ProjectContainer, ProjectContentWrapper, CardWrapper, LangList }

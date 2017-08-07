@@ -7,17 +7,17 @@ const ContentContainer = styled.div`
   align-self: center;
   flex: 1;
   a {
-    color: #0092CA;
+    color: #0092ca;
   }
   p {
     margin: 10px 0;
     line-height: 1.5;
   }
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     margin: 0 1.5em;
     h1 {
       font-size: 1.5em;
     }
   }
 `
-export  default ContentContainer
+export default ContentContainer
