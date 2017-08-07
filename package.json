@@ -1,5 +1,5 @@
 {
-  "name": "Chris",
+  "name": "chris-scouras-portfolio",
   "description": "Chris Scouras's FreeCodeCamp Portfolio Site",
   "version": "1.0.0",
   "author": "Chris Scouras <chris.scouras@gmail.com>",
@@ -12,9 +12,7 @@
     "prop-types": "^15.5.10",
     "react-icons": "^2.2.5"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

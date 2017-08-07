@@ -1,15 +1,15 @@
-import markdown from './images/thumbnails/markdown.png';
-import leaderboard from './images/thumbnails/leaderboard.png';
-import recipebox from './images/thumbnails/recipebox.png';
-import gameoflife from './images/thumbnails/gameoflife.png';
-import jscalc from './images/thumbnails/calculator.png';
-import pomodoro from './images/thumbnails/pomodoro.png';
-import tictactoe from './images/thumbnails/tictactoe.png';
-import simon from './images/thumbnails/simon.png';
-import quote from './images/thumbnails/randomquote.png';
-import twitch from './images/thumbnails/twitch.png';
-import weather from './images/thumbnails/weather.png';
-import wiki from './images/thumbnails/wiki.png';
+import markdown from './images/thumbnails/markdown.png'
+import leaderboard from './images/thumbnails/leaderboard.png'
+import recipebox from './images/thumbnails/recipebox.png'
+import gameoflife from './images/thumbnails/gameoflife.png'
+import jscalc from './images/thumbnails/calculator.png'
+import pomodoro from './images/thumbnails/pomodoro.png'
+import tictactoe from './images/thumbnails/tictactoe.png'
+import simon from './images/thumbnails/simon.png'
+import quote from './images/thumbnails/randomquote.png'
+import twitch from './images/thumbnails/twitch.png'
+import weather from './images/thumbnails/weather.png'
+import wiki from './images/thumbnails/wiki.png'
 
 const Projects = [
   {
@@ -99,6 +99,6 @@ const Projects = [
       },
     ],
   },
-];
+]
 
-export default Projects;
+export default Projects
