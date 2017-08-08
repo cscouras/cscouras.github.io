@@ -12,6 +12,9 @@ const SiteContainer = styled.main`
     }
 `
 
-const ContentWrapper = styled.div`flex: 1;`
+const ContentWrapper = styled.div`
+  flex: 1;
+  align-self: center;
+`
 
 export { SiteContainer, ContentWrapper }

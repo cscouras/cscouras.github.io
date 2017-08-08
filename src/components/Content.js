@@ -4,8 +4,6 @@ const ContentContainer = styled.div`
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  align-self: center;
-  margin: 0 auto;
   flex: 1;
   a {
     color: #0092ca;

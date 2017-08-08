@@ -6,6 +6,7 @@ const CardWrapper = styled.div`
   margin-bottom: .5em;
   text-align: center;
   h3 a {
+    white-space: pre;
     padding: 5px;
     color: #0092ca;
     transition: background .5s;
