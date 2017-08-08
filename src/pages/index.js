@@ -30,7 +30,7 @@ const IndexPage = () =>
     </p>
     <p>
       I will continue to update the <Link to="/projects">projects section</Link> of this site as I
-      complete projects and earn certifications.
+      complete projects and earn certifications so please check back often.
     </p>
   </ContentContainer>)
 

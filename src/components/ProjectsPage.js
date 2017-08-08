@@ -7,7 +7,7 @@ const CardWrapper = styled.div`
   text-align: center;
   h3 a {
     padding: 5px;
-    color: #0092CA;
+    color: #0092ca;
     transition: background .5s;
     &:hover {
       background: #222831;
@@ -21,11 +21,11 @@ const CardWrapper = styled.div`
     border-radius: 5px;
   }
 
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     flex-basis: 50%;
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-basis: 100%;
     margin-right: 0;
   }
@@ -54,15 +54,15 @@ const ProjectContainer = styled.div`
   > h3 {
     width: 100%;
     margin-bottom: 5px;
-    border-bottom: 5px solid #0092CA;
+    border-bottom: 5px solid #0092ca;
     > span {
-      background:#0092CA;
+      background: #0092ca;
       color: #222831;
       padding: 3px 8px;
     }
   }
 
-  @media (max-width: 992px){
+  @media (max-width: 992px) {
     margin: 0 1em;
   }
 `

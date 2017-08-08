@@ -12,9 +12,6 @@ const SiteContainer = styled.main`
     }
 `
 
-const ContentWrapper = styled.div`
-  margin: 0 auto;
-  flex:1;
-`
+const ContentWrapper = styled.div`flex: 1;`
 
 export { SiteContainer, ContentWrapper }

@@ -5,6 +5,7 @@ const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-self: center;
+  margin: 0 auto;
   flex: 1;
   a {
     color: #0092ca;
