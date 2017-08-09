@@ -1,0 +1,60 @@
+{
+  "assetsByChunkName": {
+    "page-component---src-pages-index-js": [
+      "page-component---src-pages-index-js-113760ffae08446d3fd1.js",
+      "page-component---src-pages-index-js-113760ffae08446d3fd1.js.map"
+    ],
+    "path---projects": [
+      "path---projects-586c7e095e534a3909ec.js",
+      "path---projects-586c7e095e534a3909ec.js.map"
+    ],
+    "page-component---src-pages-404-js": [
+      "page-component---src-pages-404-js-35d6f7d1150a3a69f01a.js",
+      "page-component---src-pages-404-js-35d6f7d1150a3a69f01a.js.map"
+    ],
+    "path---index": [
+      "path---index-586c7e095e534a3909ec.js",
+      "path---index-586c7e095e534a3909ec.js.map"
+    ],
+    "page-component---src-pages-projects-js": [
+      "page-component---src-pages-projects-js-68571471e76249e17c0e.js",
+      "page-component---src-pages-projects-js-68571471e76249e17c0e.js.map"
+    ],
+    "commons": [
+      "commons-f44660f281de6d2a13e2.js",
+      "commons-f44660f281de6d2a13e2.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-586c7e095e534a3909ec.js",
+      "path---404-html-586c7e095e534a3909ec.js.map"
+    ],
+    "path---contact": [
+      "path---contact-586c7e095e534a3909ec.js",
+      "path---contact-586c7e095e534a3909ec.js.map"
+    ],
+    "app": [
+      "app-d5e1f94f917885963257.js",
+      "app-d5e1f94f917885963257.js.map"
+    ],
+    "page-component---src-pages-about-js": [
+      "page-component---src-pages-about-js-17b697030788dcf11388.js",
+      "page-component---src-pages-about-js-17b697030788dcf11388.js.map"
+    ],
+    "page-component---src-pages-contact-js": [
+      "page-component---src-pages-contact-js-f9247b8a7f59ac2ffd84.js",
+      "page-component---src-pages-contact-js-f9247b8a7f59ac2ffd84.js.map"
+    ],
+    "path---404": [
+      "path---404-586c7e095e534a3909ec.js",
+      "path---404-586c7e095e534a3909ec.js.map"
+    ],
+    "layout-component---index": [
+      "layout-component---index-41be5383d3664b556976.js",
+      "layout-component---index-41be5383d3664b556976.js.map"
+    ],
+    "path---about": [
+      "path---about-586c7e095e534a3909ec.js",
+      "path---about-586c7e095e534a3909ec.js.map"
+    ]
+  }
+}
