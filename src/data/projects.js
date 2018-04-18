@@ -10,6 +10,11 @@ import quote from './images/thumbnails/randomquote.png'
 import twitch from './images/thumbnails/twitch.png'
 import weather from './images/thumbnails/weather.png'
 import wiki from './images/thumbnails/wiki.png'
+import meteor from './images/thumbnails/meteor.png'
+import scatterplot from './images/thumbnails/scatterplot.png'
+import bar from './images/thumbnails/bar.png'
+import force from './images/thumbnails/force.png'
+import heatmap from './images/thumbnails/heatmap.png'
 
 const Projects = [
   {
@@ -37,6 +42,40 @@ const Projects = [
         link: 'https://codepen.io/cscouras/full/qjRNZm/',
         imgsrc: gameoflife,
         languages: ['React', 'Sass'],
+      },
+    ],
+  },
+  {
+    'D3.js Projects': [
+      {
+        title: 'Meteor Strike Data',
+        link: 'https://codepen.io/cscouras/full/gxVpdX/',
+        imgsrc: meteor,
+        languages: ['D3.js', 'HTML5', 'CSS3', 'JavaScript'],
+      },
+      {
+        title: 'D3.js Scatterplot',
+        link: 'https://codepen.io/cscouras/full/YxRjqq/',
+        imgsrc: scatterplot,
+        languages: ['D3.js', 'HTML5', 'CSS3', 'JavaScript'],
+      },
+      {
+        title: 'D3.js Bar Chart',
+        link: 'https://codepen.io/cscouras/full/MvzEyv/',
+        imgsrc: bar,
+        languages: ['D3.js', 'HTML5', 'CSS3', 'JavaScript'],
+      },
+      {
+        title: 'D3.js Heat Map',
+        link: 'https://codepen.io/cscouras/full/gxqpXV',
+        imgsrc: heatmap,
+        languages: ['D3.js', 'HTML5', 'CSS3', 'JavaScript'],
+      },
+      {
+        title: 'D3.js Force Graph',
+        link: 'https://codepen.io/cscouras/full/PKvaaa',
+        imgsrc: force,
+        languages: ['D3.js', 'HTML5', 'CSS3', 'JavaScript'],
       },
     ],
   },
