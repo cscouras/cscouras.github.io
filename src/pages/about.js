@@ -71,15 +71,11 @@ const About = () =>
       <a href="https://styled-components.com" target="_blank" rel="noopener noreferrer">
         styled-components{' '}
       </a>
-      to style the site. I&apos;ve also become very interested in{' '}
+      to style the site. I&apos;m also very interested in{' '}
       <a href="https://gridbyexample.com/learn/" target="_blank" rel="noopener noreferrer">
         CSS Grid
       </a>{' '}
-      after watching{' '}
-      <a href="" target="_blank" rel="noopener noreferrer">
-        this presentation{' '}
-      </a>
-      on YouTube and plan to use it in future projects.
+      and plan to use it in future projects.
     </p>
     <p>
       There is ALWAYS something new to learn. I have quickly learned the importance of being
